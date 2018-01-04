@@ -93,13 +93,26 @@ h3{
 
 footer{
 	background-color: black;
-	height: 200px;
+	height: auto;
 }
 
 h6{
 	margin-left: 0.5em;
 }
 
-.comentarios-fotos{
-   
+.info-foot{
+	margin-left: 1em;
+}
+
+.social{
+	display: inline-block;
+	float: right;
+}
+
+
+hr{
+color: grey;
+height: 0px;
+border:1px dashed;
+
 }
