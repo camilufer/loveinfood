@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>LoveinFood - red social para los amantes de la comida</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyB7TdKsgIWrUchYKAUETAMz3Ibq-JoT4kU",
+	    authDomain: "loveinfood-4558f.firebaseapp.com",
+	    databaseURL: "https://loveinfood-4558f.firebaseio.com",
+	    projectId: "loveinfood-4558f",
+	    storageBucket: "loveinfood-4558f.appspot.com",
+	    messagingSenderId: "457297963759"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+  <div class="logocontenedor">
+  <p class="log">Love</p>
+  <img class="logo img-responsive" src="assets/img/logo.png" alt="">
+  <p class="log">Food</p>
+  </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+  </div>
+ 
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav text-uppercase bold">
+      <li ><a href="#">Recetas</a></li>
+      <li ><a href="#">Usuarios</a></li>
+      
+        </ul>
+      </li>
+    </ul>
+ 
+ 
+    <ul class="nav navbar-nav navbar-right">
+       <button type="button" class="btn btn-default text-uppercase bold" data-toggle="modal" data-target="#modalRegister">Regístrate</button>
+       <button type="button" class="btn btn-default text-uppercase bold" data-toggle="modal" data-target="#modalRegister">Ingresa</button>
+    </ul>
+  </div>
+</nav>
+
+
+
+	
+	<!-- Modal Registrarse -->
+	<div class="modal fade" id="modalRegister" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content register-form">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title"><button type="button" class="btn btn-default btn-newaccount bold">Ya tienes una cuenta?</button></h4>
+	        <h5 class="text-uppercase bold text-center">O crea una cuenta nueva</h5>
+	      </div>
+	      <div class="content">
+	      	<div class="modal-body">
+	       	<!-- Formulario Registro -->
+	        <form>
+						<div class="form-group">
+							<input id="myName" name="name" class="form-control" type="text" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<input id="lastname" name="lastname" class="form-control" type="text"  placeholder="Apellido">
+						</div>
+						<div class="form-group">
+							<input id="lastname" name="lastname" class="form-control" type="email" placeholder="Correo Electrónico: ejemplo@correo.com">
+						</div>
+						<div class="form-group">
+							<input type="text" id="phone" name="phone" class="form-control" placeholder="Teléfono">
+						</div>
+						<div class="form-group">
+							<input id="password" name="password" class="form-control" type="password"  placeholder="Contraseña (4 a 12 caracteres)">
+						</div>
+						<div class="form-group">
+							<input type="text" id="city" name="city" class="form-control" placeholder="Ciudad">
+						</div>
+						<div class="form-group">
+							<input type="text" id="code" name="code" class="form-control" placeholder="(Opcional) Código de invitación">
+						</div>
+						<div class="form-group">
+							<select name="howknowus" id="howknowus" class="form-control">
+								<option selected class="bold">Cómo te enteraste de nosotros?</option>
+								<option>Buscadores (Google, etc)</option>
+								<option>Redes Sociales (Facebook, Twitter, etc)</option>
+								<option>La Prensa (Diario, Tv, etc.)</option>
+								<option>Por un familiar/amigo</option>
+								<option>Otro</option>
+							</select>
+						</div>
+						
+						<button id="submit" type="submit" value="submit" class="btn btn-primary btn-send text-uppercase">Enviar</button>
+				
+					</form>
+	        </div>
+	      </div>
+	    </div>
+	    
+	  </div>
+	</div>
+	<!-- Fin Modal Registrarse-->
+
+	
+     
+    <img class="efecto-imagen img-responsive" src="assets/img/header-bg.png" alt="">
+    <img class="img-principal img-responsive" src="assets/img/header-photo.jpg" alt="">
+    
+    <div class="container-fluid">
+    <div class="row text-center">
+    <div class="col-md-12 transparent">
+    	<p>Con LoveinFood <br>Vuelvete un experto en la cocina</p>
+    </div>
+    </div>
+    </div>
+
+    <section class="container-fluid contenedor-imagenes">
+     <div class="row">
+    	<h3 class="titulo">Ultimas fotos</h3>
+    	<div class="col-md-4">
+    	<img class="foto" src="assets/img/362148-8d8cc1fc-3845-49d6-8c7d-f42e24e60c01.jpg" class="img-responsive" alt="Cinque Terre" width="100" height="100"> 
+    	</div>
+    	<div class="col-md-4">
+    	<img class="foto" src="assets/img/362148-8d8cc1fc-3845-49d6-8c7d-f42e24e60c01.jpg" class="img-responsive" alt="Cinque Terre" width="100" height="100">
+    	</div>
+    	<div class="col-md-4">
+    	<img class="foto" src="assets/img/362148-8d8cc1fc-3845-49d6-8c7d-f42e24e60c01.jpg" class="img-responsive" alt="Cinque Terre" width="100" height="100">
+    	</div>
+     </div>
+    </section>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
