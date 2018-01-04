@@ -67,14 +67,12 @@ button{
 
 
 .titulo{
-	margin: 0.6em;
+	
 	font-family: 'lobster';
 	color: #6C7A84;	
 }
 
-h3{
-	padding: 0.5em;
-}
+
 
 .contenedor-iconos{
 	background-color:#3C434A;
@@ -82,13 +80,17 @@ h3{
 }
 
 .corazon{
-	margin-left: 1em;
 	color: red;
 }
 
-.fa{
+.iconos-principales{
 	margin-left: 0.1em;
 	cursor: pointer;
+	margin-top: 0.6em;
+}
+
+.checked {
+    color: orange;
 }
 
 footer{
@@ -101,7 +103,7 @@ h6{
 }
 
 .info-foot{
-	margin-left: 1em;
+	margin: 1em;
 }
 
 .social{
@@ -114,5 +116,9 @@ hr{
 color: grey;
 height: 0px;
 border:1px dashed;
-
 }
+
+.stars{
+ display: block;
+}
+
