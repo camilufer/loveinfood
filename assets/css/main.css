@@ -13,6 +13,7 @@ button{
     margin: 0.5em;
     position: absolute;
     margin-left: 1em;
+    height: 20em;
 }
 
 .logo{
@@ -55,6 +56,16 @@ button{
 	height: auto;
 }
 
+.marco-foto{
+	height: auto;
+	margin-bottom: 1em;
+}
+
+.foto{
+	border-radius:10px 10px 0px 0px;
+}
+
+
 .titulo{
 	margin: 0.6em;
 	font-family: 'lobster';
@@ -63,4 +74,24 @@ button{
 
 h3{
 	padding: 0.5em;
+}
+
+.contenedor-iconos{
+	height: auto;
+	background-color:#3C434A;
+	border-radius:0px 0px 10px 10px;
+}
+
+.corazon{
+	margin: 0.5em;
+	color: red;
+}
+
+.fa{
+	cursor: pointer;
+}
+
+footer{
+	background-color: black;
+	height: 200px;
 }
