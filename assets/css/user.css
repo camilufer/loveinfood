@@ -34,3 +34,11 @@ h1{
 #oculto{
 	display: none;
 }
+
+#escondido{
+	display: none;
+}
+
+.imagenes{
+	margin-top: 2em;
+}

@@ -52,26 +52,40 @@
   <h1 class="col-xs-12 text-center">¿Qué quieres hacer hoy?</h1>
 
 <div class="contenedor-botones container">
-<div class="row ">
-<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
-<button type="button" class="boton-select btn btn-default">Subir foto</button>
+  <div class="row ">
+    <div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+      <button type="button" class="boton-select btn btn-default">Amigos</button>
 
-</div>
-<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
-<button id="comentar" type="button" data-toggle="modal"  data-target="#myModal" class="boton-select btn btn-default">Comentar</button>
-</div>
+    </div>
+  <div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+    <button id="comentar" type="button" class="boton-select btn btn-default">Publicar</button>
+  </div>
 
 
-<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
-<button type="button" class="boton-select btn btn-default">Recetas</button>
-</div>   
+  <div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+    <button id="recetas" type="button" class="boton-select btn btn-default">Recetas</button>
+  </div>   
 </div>
+
+<section class="imagenes" id="escondido">
+<div class="row">
+<div class="col-xs-4">
+<img class="img-responsive" src="assets/img/comida-rapida.jpg" alt="">
+</div> 
+<div class="col-xs-4">
+<img class="img-responsive" src="assets/img/comida-rapida.jpg" alt="">
+</div> 
+<div class="col-xs-4">
+<img class="img-responsive" src="assets/img/comida-rapida.jpg" alt="">
+</div> 
+</div> 
+</section>
 
 <section id="oculto" class="row">
   
-  <div  class=" form-group">
+  <div  class="form-group">
   <textarea class="txt-area form-control" rows="5" id="comment"></textarea>
-  <button type="button" class="publicar btn btn-default">Publicar</button>
+  <button type="button" class="publicar btn btn-default">Enviar</button>
 
 </div>
     
