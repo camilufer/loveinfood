@@ -1,7 +1,9 @@
-
-
 var database = firebase.database();
 
-$(document).ready( function () {
+$(document).ready(function(){
+	$('#comentar').click(function(){
+		$('section').show();
+	
+	});
 
-})
+});

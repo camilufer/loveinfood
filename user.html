@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
+
 	<nav class="navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -42,16 +43,45 @@
 </nav>
 <section class="container-fluid">
 <div class="row">
-<div class="col-xs-6 col-xs-push-5 contenedor-logo">
+<div class="col-xs-4 col-xs-push-4 col-sm-6 col-sm-push-5 col-md-2 col-md-push-5 contenedor-logo">
 
  <img class="logo content-center img-responsive" src="assets/img/logo.png" alt="">
  
  </div>
  </div>
-  <h1 class="text-center">¿Qué quieres hacer hoy?</h1>
+  <h1 class="col-xs-12 text-center">¿Qué quieres hacer hoy?</h1>
+
+<div class="contenedor-botones container">
+<div class="row ">
+<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+<button type="button" class="boton-select btn btn-default">Subir foto</button>
+
+</div>
+<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+<button id="comentar" type="button" data-toggle="modal"  data-target="#myModal" class="boton-select btn btn-default">Comentar</button>
+</div>
+
+
+<div class="col-xs-4 col-sm-4 col-sm-push-1 col-md-3 col-md-push-2">
+<button type="button" class="boton-select btn btn-default">Recetas</button>
+</div>   
+</div>
+
+<section class="hide row">
+  
+  <div  class=" form-group">
+  <textarea class="txt-area form-control" rows="5" id="comment"></textarea>
+  <button type="button" class="publicar btn btn-default">Publicar</button>
+
+</div>
+    
+ 
 </section>
+</div>
 
 
+
+</section>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
